@@ -149,7 +149,7 @@ public class Arrow
         }
 
         var info = PrefabInfo
-            .WithTechType(ObjectClassId + Id, Cfg.Name, Cfg.Description)
+            .WithTechType(ObjectClassId + Id, Cfg.Name, Cfg.Description, unlockAtStart: true)
             .WithIcon(sprite);
 
         var prefab = new CustomPrefab(info);
