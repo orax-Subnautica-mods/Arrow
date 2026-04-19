@@ -117,7 +117,7 @@ public class Arrow
         Plugin.ModOptions.LoadArrowOptions(this);
 
         // load the image file that will be displayed as icon in the PDA
-        Atlas.Sprite sprite = null;
+        Sprite sprite = null;
         if (Cfg.ChangeIconColorInPDA)
         {
             // load the image file and change its color
@@ -139,7 +139,7 @@ public class Arrow
             texture2D.SetPixels(colors);
             texture2D.Apply();
 
-            // convert the modified texture in Atlas.Sprite
+            // convert the modified texture in Sprite
             sprite = ImageUtils.LoadSpriteFromTexture(texture2D);
         }
         else
